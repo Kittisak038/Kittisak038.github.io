@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_jsp_var</title>
+
+    <script>
+       let n1 = 3
+       var n2 = 5 
+       const n3 = 2
+       let a1,a2,a3
+       let b1=1,b2=7,b3=0
+
+       x = 9
+       y = 3
+
+       var n2 = 7
+    </script>   
+</head>
+<body>
+
+    <script>
+        //===================================================================Normal_PHASE===============================================================
+        /*
+        let n1 = 3
+        let n2 = 5 
+        const n3 = 2
+        */
+        document.write('<br>')
+        document.write('<br>')
+        document.write('n1 + n2 =' + (n1 + n2) + '<br>')
+        document.write('n1 + n3 =' + (n1 + n3) + '<br>')
+        
+        
+        //===================================================================Short_PHASE===============================================================
+        /*
+        let n1 = 3
+        let n2 = 5 
+        const n3 = 2
+        */
+        n1 = 4
+        n2 = 6
+        //n3 = 3
+        n4 = 7
+        document.write('n1 + n2 =' + (n1 + n2) + '<br>')
+        //document.write('n1 + n3 =' + (n1 + n3) + '<br>')
+        document.write('n2 + n4 =' + (n2 + n4) + '<br>')
+        
+        
+        //===================================================================LAZY_PHASE===============================================================
+        /*
+        let a1,a2,a3
+        let b1=1,b2=7,b3=0
+        */
+        a1 = 1
+        a2 = 2 
+        a3 = 3
+        document.write('a2 + a3 =' + (a2 + a3) + '<br>')
+        document.write('b2 + b3 =' + (b2 + b3) + '<br>')
+        
+        //============x_and_y==========
+        /*
+         x = 9
+        y = 3
+        */
+        document.write(x + ' ' + y)
+        
+        
+        
+        </script>
+    
+</body>
+</html>
